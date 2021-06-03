@@ -1,0 +1,16 @@
+INSERT INTO tipodocumento (idTipoDocumento, nombreDocumento) values (1,'Cédula')
+INSERT INTO tipodocumento (idTipoDocumento, nombreDocumento) values (2,'Tarjeta identidad')
+INSERT INTO tipodocumento (idTipoDocumento, nombreDocumento) values (3,'Cédula extrangería')
+
+INSERT INTO tipovehiculo  (idTipoVehiculo, nombreTipoVehiculo) values (1,'Carro')
+INSERT INTO tipovehiculo  (idTipoVehiculo, nombreTipoVehiculo) values (2,'Moto')
+INSERT INTO tipovehiculo  (idTipoVehiculo, nombreTipoVehiculo) values (3,'Cuatrimoto')
+INSERT INTO tipovehiculo  (idTipoVehiculo, nombreTipoVehiculo) values (4,'Camion')
+INSERT INTO tipovehiculo  (idTipoVehiculo, nombreTipoVehiculo) values (5,'Triciclo')
+
+INSERT INTO usuario (id_usuario,nombre_usuario, password, enabled ) values (1,'santiago','$2a$10$LRt6XNWuw3kzr5oObx7nIuGa3OgHD2zMfu66sd7ffz.sdndLjBlr6', true)
+INSERT INTO usuario (id_usuario,nombre_usuario, password, enabled ) values (2,'anonimo','$2a$10$s3LusodrWqRZBd.CP./f0.M84TgkOn7yADObBnL7agKi7dwpGGhOK', true)
+INSERT INTO roles (id_rol,nombre_rol) values (1,'ROLE_ADMIN')
+INSERT INTO roles (id_rol,nombre_rol) values (2,'ROLE_CONSULTA')
+INSERT INTO users_authorities (id_usuario, id_rol ) values (1,1)
+INSERT INTO users_authorities (id_usuario, id_rol ) values (2,2)
